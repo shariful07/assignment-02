@@ -1,5 +1,177 @@
+/* Default Settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: #F7F7F7;
+    font-size: 16px;
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Color */
+:root {
+    --orange: #FEA301;
+    --Sky-Blue: #01ACFD;
+    --green: #05D4DF;
+    --blue-2: #5D58EF;
+    --black: #111;
+    --gray: #666;
+    --white: #fff;
+}
+
+/* Shared Style */
+.quicksand-reqular,
+.quicksand-medium,
+.quicksand-bold {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.quicksand-medium {
+    font-weight: 500;
+}
+
+.quicksand-bold {
+    font-weight: 700;
+}
+
+.raleway-medium {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.btn {
+    background: transparent;
+    min-width: 197px;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.bg-og {
+    background: var(--orange);
+}
+
+.bg-black {
+    background: var(--black);
+}
+
+.txt-clr-og {
+    color: var(--orange);
+}
+
+.txt-clr-blue {
+    color: var(--Sky-Blue);
+}
+
+.txt-clr-green {
+    color: var(--green);
+}
+
+.txt-clr-blue2 {
+    color: var(--blue-2);
+}
+
+.txt-clr-black {
+    color: var(--black);
+}
+
+
+
+/* Nav */
+.nav {
+    min-height: 102px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav h1 {
+    align-items: center;
+}
+
+.nav h1 img {
+    margin-right: 5px;
+}
+
+.nav h1 b {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.nav ul li {
+    padding: 0 16px;
+}
+
+.nav ul li a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav ul li:first-child a {
+    font-weight: 700;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 575px) {
+    .nav {
+        min-height: 70px;
+        border-bottom: 0.5px solid #FEA301;
+    }
+
+    .nav h1 b,
+    .nav ul,
+    nav .btn {
+        display: none;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav h1 img {
+        width: 46px;
+    }
+}
