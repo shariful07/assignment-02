@@ -82,6 +82,7 @@ img {
     border: none;
     border-radius: 12px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .bg-og {
@@ -111,8 +112,6 @@ img {
 .txt-clr-black {
     color: var(--black);
 }
-
-
 
 /* Nav */
 .nav {
@@ -174,4 +173,61 @@ img {
     .nav h1 img {
         width: 46px;
     }
+}
+
+/* Vision Section */
+.banner {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-text {
+    max-width: 640px;
+}
+
+.banner h2 {
+    font-size: 56px;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 61px;
+    margin-bottom: 24px;
+}
+
+.banner h2 b {
+    display: block;
+    color: var(--orange);
+}
+
+.banner h2 i {
+    font-style: normal;
+    color: var(--Sky-Blue);
+}
+
+.banner p {
+    font-size: 20px;
+    color: var(--black);
+    margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 575px) {
+    .banner {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .banner h2 {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+}
+
+.standard-curr {
+    background: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
 }
